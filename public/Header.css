@@ -4,7 +4,7 @@ body {
 li {
   display: inline;
   list-style-type: none;
-  margin: 5%;
+  margin: 2%;
   font-size: 175%;
 
   font-family: meny-font;
@@ -64,9 +64,16 @@ footer p {
 }
 
 .aboutContainer {
-  position: absolute;
   bottom: 50%;
   right: 10%;
+}
+.aboutContainer,
+.tjansterInfo,
+.moreInfoMe,
+.moreInfoExperience,
+.moreInfoEducation {
+  position: absolute;
+
   border-radius: 10%;
   display: flex;
   flex-direction: column;
@@ -86,7 +93,8 @@ footer p {
   text-shadow: 2px 2px 2px rgb(8, 8, 8), 0 0 5px rgb(8, 8, 8),
     0 0 5px rgb(8, 8, 8);
 }
-.aboutH1 {
+.aboutH1,
+.tjansterH1 {
   color: #fd5305;
   margin-top: 100px;
   margin-left: 10%;
@@ -94,4 +102,90 @@ footer p {
   font-family: Robotos;
   text-shadow: 2px 2px 2px rgba(8, 8, 8, 0.658), 0 0 5px rgba(8, 8, 8, 0.596),
     0 0 5px rgba(8, 8, 8, 0.493);
+}
+
+.tjansterImg {
+  border-radius: 10%;
+  border-color: #fd5305;
+  margin: 2%;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05), 0 5px 20px rgba(0, 0, 0, 0.979);
+}
+.tjansterContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20%;
+}
+.tjansterH1 {
+  text-align: center;
+  margin-top: -2%;
+}
+
+.tjansterInfo {
+  width: 700px;
+  height: 250px;
+  bottom: 55%;
+  right: 25%;
+  border-radius: 50px;
+  padding: 2%;
+}
+
+p {
+  font-size: 92.5%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(59, 37, 12);
+}
+
+.buttons {
+  position: absolute;
+
+  bottom: 38%;
+  right: 8%;
+  border-radius: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  margin: 2%;
+  padding: 2%;
+  width: 120px;
+  color: #ee780a;
+  font-family: roboto;
+  font-size: 100%;
+  background-color: #983caa;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 0 2px 0 rgba(19, 18, 19, 0.822), 0 5px 20px rgba(0, 0, 0, 0.527);
+}
+
+.moreInfoMe {
+  bottom: -5%;
+  right: 200%;
+  padding: 5%;
+  background-color: rgba(167, 7, 100);
+  box-shadow: 0 2px 0 rgba(19, 18, 19, 0.822), 0 5px 20px rgba(0, 0, 0, 0.527);
+}
+.moreInfoExperience {
+  bottom: 300%;
+  right: 100%;
+  padding: 5%;
+  background-color: rgba(167, 7, 100);
+  box-shadow: 0 2px 0 rgba(19, 18, 19, 0.822), 0 5px 20px rgba(0, 0, 0, 0.527);
+}
+.moreInfoEducation {
+  bottom: -500%;
+  right: 100%;
+  padding: 5%;
+  background-color: rgba(167, 7, 100);
+  box-shadow: 0 2px 0 rgba(19, 18, 19, 0.822), 0 5px 20px rgba(0, 0, 0, 0.527);
+}
+
+.moreInfoh1 {
+  margin-top: -30%;
+}
+.moreInfoP {
+  color: rgb(240, 243, 245);
 }

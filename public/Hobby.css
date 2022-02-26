@@ -25,7 +25,7 @@ h1 span {
 }
 
 dt {
-  color: #080808;
+  color: #ee780a;
   line-height: 1;
 }
 
@@ -39,11 +39,11 @@ dt span {
   display: block;
   font-size: 400%;
 }
-
 dd {
   font-size: 92.5%;
   margin-left: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(59, 37, 12);
 }
 
 dd dt {

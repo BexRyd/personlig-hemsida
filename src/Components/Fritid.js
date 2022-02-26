@@ -10,17 +10,17 @@ function Fritid() {
         <ul>
           <li>
             <Link className="link" to="/">
-              OmMig
+              Hem
             </Link>
           </li>
           <li>
             <Link className="link" to="/Cv">
-              Cv
+              Tjänster
             </Link>
           </li>
           <li>
             <Link className="currentPage" to="/Fritid">
-              Fritid
+              Intressen
             </Link>
           </li>
           <li>

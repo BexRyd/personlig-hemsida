@@ -9,17 +9,17 @@ function Kontakt() {
         <ul>
           <li>
             <Link className="link" to="/">
-              OmMig
+              Hem
             </Link>
           </li>
           <li>
             <Link className="link" to="/Cv">
-              Cv
+              Tjänster
             </Link>
           </li>
           <li>
             <Link className="link" to="/Fritid">
-              Fritid
+              Intressen
             </Link>
           </li>
           <li>
@@ -29,6 +29,9 @@ function Kontakt() {
           </li>
         </ul>
       </header>
+      <h1>
+        <span>Kontakt</span>
+      </h1>
       <Footer />
     </div>
   );

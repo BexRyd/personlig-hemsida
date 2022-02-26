@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
+import ReactDom from "react-dom";
 import { Link } from "react-router-dom";
+import Button from "./Buttons";
 import Footer from "./Footer";
-import girl from "./img/girl.jpg";
-
+import girl from "./img/girl2.jpg";
 function OmMig() {
   return (
     <div className="container">
@@ -10,17 +11,17 @@ function OmMig() {
         <ul>
           <li>
             <Link className="currentPage" to="/">
-              OmMig
+              Hem
             </Link>
           </li>
           <li>
             <Link className="link" to="/Cv">
-              Cv
+              Tjänster
             </Link>
           </li>
           <li>
             <Link className="link" to="/Fritid">
-              Fritid
+              Intressen
             </Link>
           </li>
           <li>
@@ -30,6 +31,9 @@ function OmMig() {
           </li>
         </ul>
       </header>
+      <h1>
+        <span>Hem</span>
+      </h1>
       <h1 className="aboutH1">Välkommen till en sida med Klös!</h1>
       <img className="girl" src={girl} alt="girl" />
       <div className="aboutContainer">
@@ -38,6 +42,8 @@ function OmMig() {
         <p className="about">Frontend developper</p>
         <p className="about">Sport intresserad</p>
       </div>
+
+      <Button />
       <Footer />
     </div>
   );
