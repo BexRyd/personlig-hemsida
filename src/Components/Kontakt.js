@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
+import Form from "./Form";
 
 function Kontakt() {
   return (
@@ -32,6 +33,7 @@ function Kontakt() {
       <h1>
         <span>Kontakt</span>
       </h1>
+      <Form />
       <Footer />
     </div>
   );

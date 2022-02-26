@@ -3,7 +3,7 @@ import ReactDom from "react-dom";
 import { Link } from "react-router-dom";
 import Button from "./Buttons";
 import Footer from "./Footer";
-import girl from "./img/girl2.jpg";
+import girl from "./img/girl4.jpg";
 function OmMig() {
   return (
     <div className="container">

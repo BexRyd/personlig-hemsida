@@ -7,21 +7,21 @@ function Button() {
   const [infoEducation, setInfoEducation] = useState(false);
 
   function buttonInfo(e) {
-    if (e.target.innerHTML == "Vem är jag?") {
+    if (e.target.innerHTML === "Vem är jag?") {
       setInfoMe(true);
     } else {
       setInfoMe(false);
     }
   }
   function btnInfoExperience(e) {
-    if (e.target.innerHTML == "Erfarenhet") {
+    if (e.target.innerHTML === "Erfarenhet") {
       setInfoExperience(true);
     } else {
       setInfoExperience(false);
     }
   }
   function btnInfoEducation(e) {
-    if (e.target.innerHTML == "Utbildning") {
+    if (e.target.innerHTML === "Utbildning") {
       setInfoEducation(true);
     } else {
       setInfoEducation(false);
