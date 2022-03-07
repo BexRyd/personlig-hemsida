@@ -4,6 +4,9 @@ function Form() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setFormSent(true);
+    setformData((previusValue) => {
+      return previusValue + formData;
+    });
     console.log(formData);
   };
 
@@ -20,7 +23,7 @@ function Form() {
     <div>
       {!formSent ? (
         <form onSubmit={handleSubmit} className="form" id="form">
-          <label for="Fname" className="form-label">
+          <label htmlFor="Fname" className="form-label">
             Förnamn
           </label>
           <br />
@@ -30,12 +33,12 @@ function Form() {
             }
             value={formData.Fname}
             type="text"
-            class="form-control"
+            className="form-control"
             id="Fname"
             placeholder="Förnamn"
             required
           />
-          <label for="Lname" className="form-label">
+          <label htmlFor="Lname" className="form-label">
             <br />
             Efternamn
           </label>
@@ -49,10 +52,11 @@ function Form() {
             type="text"
             placeholder="Efternamn"
             id="Lname"
+            required
           />
 
           <br />
-          <label for="email" className="form-label">
+          <label htmlFor="email" className="form-label">
             <br />
             Email
           </label>
@@ -66,6 +70,7 @@ function Form() {
             type="email"
             placeholder="Email"
             id="email"
+            required
           />
           <br />
           <textarea
@@ -74,9 +79,8 @@ function Form() {
             name="comment"
             form="form"
             id="textArea"
-          >
-            Enter text here...
-          </textarea>
+            required
+          ></textarea>
           <br />
 
           <button type="submit">Skicka</button>

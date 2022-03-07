@@ -13,7 +13,7 @@ function createEntry(hobbyTerm) {
   );
 }
 
-function Hobby(props) {
+function Hobby() {
   return (
     <div>
       <h1>

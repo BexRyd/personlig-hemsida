@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 import Button from "./Buttons";
 import Footer from "./Footer";
 import girl from "./img/girl4.jpg";
-function OmMig() {
+
+function Hem() {
   return (
     <div className="container">
       <header>
@@ -15,7 +16,7 @@ function OmMig() {
             </Link>
           </li>
           <li>
-            <Link className="link" to="/Cv">
+            <Link className="link" to="/Tjanster">
               Tjänster
             </Link>
           </li>
@@ -34,14 +35,9 @@ function OmMig() {
       <h1>
         <span>Hem</span>
       </h1>
+
       <h1 className="aboutH1">Välkommen till en sida med Klös!</h1>
       <img className="girl" src={girl} alt="girl" />
-      <div className="aboutContainer">
-        <p className="about">Kattgalen Tjej!</p>
-        <p className="about">Djur intresserad</p>
-        <p className="about">Frontend developper</p>
-        <p className="about">Sport intresserad</p>
-      </div>
 
       <Button />
       <Footer />
@@ -49,4 +45,4 @@ function OmMig() {
   );
 }
 
-export default OmMig;
+export default Hem;

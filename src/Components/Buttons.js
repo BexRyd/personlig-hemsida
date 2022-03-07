@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ReactDom from "react-dom";
+import kionSofa from "./img/kionSofa.jpg";
 
 function Button() {
   const [infoMe, setInfoMe] = useState(false);
@@ -36,7 +37,7 @@ function Button() {
         </button>
       ) : (
         <button
-          style={{ backgroundColor: "black", color: "pink" }}
+          style={{ backgroundColor: "#ee780a", color: "#983caa" }}
           className="meBtn"
           onClick={buttonInfo}
         >
@@ -50,7 +51,7 @@ function Button() {
         </button>
       ) : (
         <button
-          style={{ backgroundColor: "black", color: "pink" }}
+          style={{ backgroundColor: "#ee780a", color: "#983caa" }}
           className="meBtn"
           onClick={btnInfoExperience}
         >
@@ -64,7 +65,7 @@ function Button() {
         </button>
       ) : (
         <button
-          style={{ backgroundColor: "black", color: "pink" }}
+          style={{ backgroundColor: "#ee780a", color: "#983caa" }}
           className="meBtn"
           onClick={btnInfoEducation}
         >
@@ -105,6 +106,28 @@ function Button() {
           </p>
         </div>
       ) : null}
+
+      {!infoMe && !infoExperience && !infoEducation ? (
+        <div className="infoHem">
+          <p>
+            Jag heter Rebecca Rydgren. Jag har ett mindre <b>smådjurshotell</b>{" "}
+            i hem miljö. Vi erbjuder även andra tjänster som <b>promenader</b>{" "}
+            med hunden eller <b>passning av katt och hund.</b>
+          </p>
+        </div>
+      ) : null}
+
+      {infoMe || infoExperience || infoEducation ? (
+        <div className="aboutContainer">
+          <p className="about">Kattgalen Tjej!</p>
+          <p className="about">Djur intresserad</p>
+          <p className="about">Utbildad djurvårdare</p>
+          <p className="about"> driver smådjurshotell</p>
+          <p className="about">erbjuder passning av djur</p>
+        </div>
+      ) : (
+        <img className="kionSofa" src={kionSofa} alt="cat" />
+      )}
     </div>
   );
 }

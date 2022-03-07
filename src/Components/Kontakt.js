@@ -14,7 +14,7 @@ function Kontakt() {
             </Link>
           </li>
           <li>
-            <Link className="link" to="/Cv">
+            <Link className="link" to="/Tjanster">
               Tjänster
             </Link>
           </li>

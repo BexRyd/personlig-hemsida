@@ -1,9 +1,9 @@
-import OmMig from "./Components/Om-mig";
+import Hem from "./Components/Hem";
 
 function App() {
   return (
     <div className="App">
-      <OmMig />
+      <Hem />
     </div>
   );
 }

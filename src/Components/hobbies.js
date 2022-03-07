@@ -22,7 +22,7 @@ const Hobbies = [
     text: "“KattGalen!” eller “Crazy cat lady!” är något jag ofta kallas. I mitt hem bor 5st katter av olika slag. Bengal, sibirisk, perser, somali och savannah. Vår bengal och savannah som är båda av hybrid ras, älskar att vara med till skogen. Finns inget bättre än att njuta av naturen med ett par riktiga katter!",
   },
   {
-    id: 1,
+    id: 4,
     emoji: `${charmander}`,
     hobby: "Djur",
     text: "Djur intresset är stort! Hos oss bor det: 5 katter, 1 hund, 3 råttor, skäggagam, packman och en landsköldpadda.",

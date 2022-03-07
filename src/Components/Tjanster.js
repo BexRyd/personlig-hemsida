@@ -5,7 +5,7 @@ import djurpassning from "./img/djurpassning.jpg";
 import smadjurshotell from "./img/smadjurshotell.jpg";
 import promenader from "./img/promenader.jpg";
 
-function Cv() {
+function Tjanster() {
   return (
     <div>
       <header>
@@ -16,7 +16,7 @@ function Cv() {
             </Link>
           </li>
           <li>
-            <Link className="currentPage" to="/Cv">
+            <Link className="currentPage" to="/Tjanster">
               Tjänster
             </Link>
           </li>
@@ -56,4 +56,4 @@ function Cv() {
   );
 }
 
-export default Cv;
+export default Tjanster;
